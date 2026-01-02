@@ -3,7 +3,7 @@ import { faFacebook, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 import { faBell } from '@fortawesome/free-regular-svg-icons';
 import { IProfile } from '../component/profile/IProfile';
-import image from '../asset/sample_tux.png';
+import image from '../asset/Hyokyung.jpg';
 
 const profile: IProfile.Payload = {
   disable: false,
@@ -11,32 +11,28 @@ const profile: IProfile.Payload = {
   // image: 'https://resume.yowu.dev/static/image/profile_2019.png',
   image,
   name: {
-    title: 'Tux Linux Penguin',
-    small: '(Tux)',
+    title: '안효경',
+    small: '(An Hyokyung)',
   },
   contact: [
     {
-      title: 'tux@linux.org',
-      link: 'mailto:tux@linux.org',
+      title: 'dksgyrud1349@naver.com',
+      link: 'mailto:dksgyrud1349@naver.com',
       icon: faEnvelope,
     },
     {
-      title: 'Please contact me by email',
+      title: '010-2258-1349',
       icon: faPhone,
       badge: true,
     },
     {
-      link: 'https://github.com/uyu423/resume-nextjs',
+      link: 'https://github.com/dksgyrud1349',
       icon: faGithub,
-    },
-    {
-      link: 'https://www.facebook.com/groups/ubuntu.ko',
-      icon: faFacebook,
-    },
+    }
   ],
   notice: {
     title:
-      "The content below is all fictitious and is just a sample from 'https://github.com/uyu423/resume-nextjs'.",
+      "기재된 휴대폰 번호와 이메일로 연락 주시면 감사하겠습니다.",
     icon: faBell,
   },
 };

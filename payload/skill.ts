@@ -1,140 +1,108 @@
 import { ISkill } from '../component/skill/ISkill';
 
-const programmingLanguages: ISkill.Skill = {
-  category: 'Programming Languages',
+const languages: ISkill.Skill = {
+  category: 'Languages',
   items: [
     {
-      title: 'C',
+      title: 'Java',
       level: 3,
     },
     {
-      title: 'Shell Scripting',
-      level: 3,
-    },
-    {
-      title: 'Python',
-      level: 3,
-    },
-    {
-      title: 'Perl',
-      level: 2,
-    },
-    {
-      title: 'Golang',
-      level: 2,
-    },
-    {
-      title: 'Rust',
-      level: 1,
-    },
+      title: 'JavaScript',
+      level: 3
+    }
   ],
 };
 
-const kernelDevelopment: ISkill.Skill = {
-  category: 'Kernel Development',
+const backEnd: ISkill.Skill = {
+  category: 'Back-end',
   items: [
     {
-      title: 'Kernel Programming',
-      level: 3,
+      title: 'Spring Framework',
+      level: 3
     },
     {
-      title: 'GNU Debugger',
-      level: 3,
+      title: 'Spring boot',
+      level: 3
     },
     {
-      title: 'Memory Management',
-      level: 2,
+      title: 'eGov Framework',
+      level: 2
     },
     {
-      title: 'System Call Interface',
-      level: 2,
+      title: 'MyBatis',
+      level: 3
     },
+    {
+      title: 'JPA',
+      level: 3
+    }
   ],
 };
 
-const virtualization: ISkill.Skill = {
-  category: 'Virtualization',
+const frontEnd: ISkill.Skill = {
+  category: 'Front-end',
   items: [
     {
-      title: 'Docker',
-      level: 3,
-    },
-    {
-      title: 'KVM',
-      level: 3,
-    },
-    {
-      title: 'Xen',
+      title: 'Vue.js',
       level: 2,
     },
     {
-      title: 'VirtualBox',
-      level: 2,
+      title: 'jQuery',
+      level: 3
     },
     {
-      title: 'VMware ESXi',
-      level: 1,
+      title: 'JSP',
+      level: 3
     },
+    {
+      title: 'HTML5',
+      level: 3
+    },
+    {
+      title: 'CSS3',
+      level: 3
+    }
   ],
 };
 
-const automation: ISkill.Skill = {
-  category: 'Automation',
+const database: ISkill.Skill = {
+  category: 'Database',
   items: [
     {
-      title: 'Ansible',
-      level: 3,
+      title: 'MariaDB',
+      level: 3
     },
     {
-      title: 'Puppet',
-      level: 3,
+      title: 'MongoDB',
+      level: 3
     },
     {
-      title: 'Chef',
-      level: 2,
-    },
-    {
-      title: 'Jenkins',
-      level: 2,
-    },
-    {
-      title: 'CI/CD Pipelines',
-      level: 1,
-    },
-    {
-      title: 'Infrastructure as Code',
-      level: 1,
-    },
+      title: 'Oracle',
+      level: 2
+    }
   ],
 };
 
-const networkSecurity: ISkill.Skill = {
-  category: 'Network Security',
+const versionControl: ISkill.Skill = {
+  category: 'Version Control & Tool',
   items: [
     {
-      title: 'iptables',
-      level: 3,
+      title: 'GitHub',
+      level: 2
     },
     {
-      title: 'OpenSSH',
-      level: 3,
+      title: 'SVN',
+      level: 2
     },
     {
-      title: 'OpenSSL',
-      level: 2,
+      title: 'Apache Tomcat 9.0',
+      level: 2
     },
     {
-      title: 'NACLs',
-      level: 2,
-    },
-    {
-      title: 'VPN Technologies',
-      level: 2,
-    },
-    {
-      title: 'Intrusion Detection',
-      level: 1,
-    },
+      title: 'Swagger',
+      level: 2
+    }
   ],
 };
 
@@ -165,12 +133,11 @@ const misc: ISkill.Skill = {
 const skill: ISkill.Payload = {
   disable: false,
   skills: [
-    programmingLanguages,
-    kernelDevelopment,
-    virtualization,
-    automation,
-    networkSecurity,
-    misc,
+    languages,
+    backEnd,
+    frontEnd,
+    database,
+    versionControl
   ],
   tooltip: '1: 기초 수준\n2: 취미 개발 수준\n3: Production 개발 가능 수준',
 };

@@ -51,5 +51,5 @@ export const Style: Record<TStyleKey, CSSProperties> = {
 
   skillKeywordBadge: {
     fontWeight: 400,
-  },
+  }
 };

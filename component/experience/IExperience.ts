@@ -51,7 +51,10 @@ export declare namespace IExperience {
      * @todo `IRow.Description[]` 으로 변경
      */
 
-    descriptions: string[];
+    descriptions1: string[];
+    descriptions2: string[];
+    description1: string;
+    description2: string;
     /**
      * ### (직장)경험의 키워드
      *

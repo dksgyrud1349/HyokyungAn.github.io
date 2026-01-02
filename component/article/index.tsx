@@ -19,8 +19,10 @@ export const Article = {
 
 function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
   return (
-    <CommonSection title="ARTICLE">
-      <ArticleRow payload={payload} />
+    // title : ARTICLE
+    // CommonSection 태그 안에 <ArticleRow payload={payload} /> 추가하면 사용 가능
+    <CommonSection title="">
+      
     </CommonSection>
   );
 }

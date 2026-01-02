@@ -63,7 +63,7 @@ export default function ExperienceRow({
           <h4 style={Style.gray}>{periodTitle}</h4>
         </Col>
         <Col sm={12} md={9}>
-          <h4 style={{ display: 'inline-flex', alignItems: 'center' }}>
+          <h4 style={{ display: 'inline-flex', alignItems: 'center', fontWeight: 'bold'}}>
             {item.title}{' '}
             <span style={{ fontSize: '65%', display: 'inline-flex', alignItems: 'center' }}>
               {isCurrentlyEmployed && (
@@ -92,12 +92,28 @@ export default function ExperienceRow({
           </Col>
           <Col sm={12} md={9}>
             <i style={Style.gray}>{position.title}</i>
-            <ul className="pt-2">
-              {position.descriptions.map((description, descIndex) => (
+            <p className='pt-2 mb-0'>{position.description1}</p>
+            <p className='ml-4'>
+              {position.descriptions1.map((description, descIndex) => (
                 <li key={descIndex.toString()}>{description}</li>
               ))}
-              {createSkillKeywords(position.skillKeywords)}
-            </ul>
+            </p>
+            <p className='mb-0'>
+              {position.description2}
+            </p>
+            <p className='ml-4'>
+              {position.descriptions2.map((description, descIndex) => (
+                <li key={descIndex.toString()}>{description}</li>
+              ))}
+            </p>
+            <strong>Skill Keywords</strong>
+            <div>
+              {position.skillKeywords.map((keyword, index) => (
+                <Badge style={Style.skillKeywordBadge} key={index.toString()} color="secondary" className="mr-2">
+                  {keyword}
+                </Badge>
+              ))}
+            </div>
           </Col>
         </Row>
       ))}
@@ -146,7 +162,7 @@ function createSkillKeywords(skillKeywords?: string[]) {
             style={Style.skillKeywordBadge}
             key={index.toString()}
             color="secondary"
-            className="mr-1"
+            className="mr-2"
           >
             {keyword}
           </Badge>

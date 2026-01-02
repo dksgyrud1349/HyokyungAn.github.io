@@ -17,8 +17,10 @@ export const Presentation = {
 
 function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
   return (
-    <CommonSection title="PRESENTATION">
-      <PresentationRow payload={payload} />
+    // PRESENTATION
+    // CommonSection에 <PresentationRow payload={payload} /> 추가 시 사용 가능
+    <CommonSection title="">
+      
     </CommonSection>
   );
 }
